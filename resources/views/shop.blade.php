@@ -114,7 +114,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/2.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -155,7 +155,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/3.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -196,7 +196,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/4.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -237,7 +237,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/5.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -278,7 +278,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/6.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -319,7 +319,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/7.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -360,7 +360,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/8.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/8.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -401,7 +401,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/9.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -442,7 +442,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/10.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/10.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -483,7 +483,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/11.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/11.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -524,7 +524,7 @@
                                             <div class="single-product-wrap">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/12.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/12.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -570,7 +570,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/12.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/12.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -614,7 +614,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/11.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/11.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -658,7 +658,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/10.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/10.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -702,7 +702,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/9.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -746,7 +746,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/8.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/8.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -790,7 +790,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/7.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -834,7 +834,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/6.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -878,7 +878,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/5.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -922,7 +922,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/4.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -966,7 +966,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/3.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -1010,7 +1010,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/2.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
@@ -1054,7 +1054,7 @@
                                             <div class="col-lg-3 col-md-5 ">
                                                 <div class="product-image">
                                                     <a href="single-product.html">
-                                                        <img src="images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                        <img src="{{asset("/dist/images/product/large-size/1.jpg")}}" alt="Li's Product Image">
                                                     </a>
                                                     <span class="sticker">New</span>
                                                 </div>
