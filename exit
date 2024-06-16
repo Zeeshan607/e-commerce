@@ -1,0 +1,67 @@
+[33mcommit 5ed66c05cd090de7172cf0db2c0686a1919d447e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: bd48da2 a3fed80
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Sun Jun 16 10:41:45 2024 +0500
+
+    Merge branch 'master' of https://github.com/Zeeshan607/e-commerce
+
+[33mcommit bd48da2e461d3fe1ee90d5e029efff5f604910af[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Sun Jun 16 10:41:26 2024 +0500
+
+    installed laravel/ui and made bootstrap auth scaffolding, user login and register features enabled
+
+[33mcommit f70d3bff815196db918135ff7095a57ae93531bf[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Sat Jun 15 23:51:51 2024 +0500
+
+    added shop page at /shop
+
+[33mcommit a3fed80f2478cd0ba77304698369bf8d8577aa97[m
+Author: asmaa <asmaa.ghayyate@gmail.com>
+Date:   Sat Jun 15 20:09:59 2024 +0200
+
+    finished fixing image urls on shop page
+
+[33mcommit 8f6ef96143f52e463dfba0fd263340b70546e4f7[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Sat Jun 15 22:50:39 2024 +0500
+
+    added style.css file of theme which was missing from public folder, used blade directives and directory structure to saperate reuseable components like header and footer, fixed all public resource url of homepage , header and footer, [front end theme injected in project successfully, basic layout structure is made and now can be extended to develop further pages at client side ]
+
+[33mcommit 85b032eade06588d7740d160989d015d851e454b[m
+Author: asmaa <asmaa.ghayyate@gmail.com>
+Date:   Sat Jun 15 17:00:34 2024 +0200
+
+    tried adding frontend theme in project, added index file's code in wellcome but public assets links are not working
+
+[33mcommit c32a7a4153ceed0a5a58f293fd1eb6efdb05f106[m
+Merge: d786fd7 dedde42
+Author: asmaa <asmaa.ghayyate@gmail.com>
+Date:   Thu Jun 13 14:59:18 2024 +0200
+
+    trying to fix merge conflict error
+
+[33mcommit dedde42b33ad2b983711542a13e1c5ce855e039f[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Thu Jun 13 18:27:23 2024 +0500
+
+    made backup of welcome.blade.php file
+
+[33mcommit d786fd705f4673f31a724f00f69676b00aba5ecd[m
+Author: asmaa <asmaa.ghayyate@gmail.com>
+Date:   Thu Jun 13 14:34:27 2024 +0200
+
+    removed default html and php code and added simple text
+
+[33mcommit 2f734cdf7e3f4e505ffdb7ebac0fa3e534b045ed[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Wed Jun 12 13:49:01 2024 +0500
+
+    i removed and empty line from welcome.blade.php file
+
+[33mcommit 8a38866e1771989182c9f5978719d9ea54eb9081[m
+Author: Muhammad Zeeshan <zeeshanawan1998@gmail.com>
+Date:   Wed Jun 12 13:44:04 2024 +0500
+
+    initial comment
