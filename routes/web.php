@@ -10,3 +10,7 @@ Route::get('/', function () {
 Route::get("/shop", function (){
     return view('shop');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
