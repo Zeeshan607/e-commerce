@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
     use HasFactory, Notifiable;
 
@@ -42,5 +43,15 @@ class Admin extends Model
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Password need to be all time encrypted.
+     *
+     * @param string $password
+     */
+    public function setPasswordAttribute($password)
+    {
+      return   $this->attributes['password'] = bcrypt($password);
     }
 }

@@ -17,9 +17,8 @@ class AdminsTableSeeder extends Seeder
         //
         \DB::table('admins')->insert([
             'name' => 'Admin001',
-            'email' => 'admin@ecommerce.com',
-            'role'=> 'super_admin',
-            'password' => Hash::make('Ecommerce-2024'),
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('Ecommerce-2024'),
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),
                 ]);

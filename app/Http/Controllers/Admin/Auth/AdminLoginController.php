@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,7 @@ class AdminLoginController extends Controller
     }
 
     public function showLoginForm(){
-        return view('back.admin.auth.login');
+        return view('admin.auth.login');
     }
 
     protected function guard(){
@@ -30,13 +31,19 @@ class AdminLoginController extends Controller
 
 
     public function adminLogin(Request $request){
+
         $this->validate($request, [
-            'email'   => 'required|email',
+            'email'   => 'required',
             'password' => 'required|min:8'
         ]);
 //
-        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+//        $admin=Admin::where('email',$request->email)->first();
+//        $correct=\Hash::check($request->password, $admin->password);
+//        \Log::info("password correct ".$correct);
+//        \Log::info(['email' => $request->email, 'password' => $request->password]);
+        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
 //
+//            \Log::info("login successs");
             return redirect()->intended('/dashboard/statics');
         }
         return back()->withInput($request->only('email', 'remember'))->withErrors(["Incorrect Credentials"]);
