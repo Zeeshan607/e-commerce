@@ -59,6 +59,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Header Top Area End Here -->
     <!-- Begin Header Middle Area -->
     <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
@@ -220,6 +222,7 @@
             </div>
         </div>
     </div>
+
     <!-- Header Middle Area End Here -->
 
     @include('layout.partials.navbar')
