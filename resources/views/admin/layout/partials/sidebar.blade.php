@@ -5,33 +5,68 @@
         </a>
 
         <ul class="sidebar-nav">
-            <li class="sidebar-header">
-                Pages
-            </li>
 
-            <li class="sidebar-item">
-                <a class="sidebar-link" href="index.html">
+
+            <li class="sidebar-item ">
+                <a class="sidebar-link" href="{{route('dashboard')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
                 </a>
             </li>
 
+            <li class="sidebar-header">
+                Shop
+            </li>
+
+
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
-                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">members</span>
+                <a class="sidebar-link" href="">
+                    <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Categories</span>
                 </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-in.html">
-                    <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">activites</span>
+                <a class="sidebar-link" href="#">
+                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Products</span>
                 </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-up.html">
+                <a class="sidebar-link" href="#">
+                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Orders</span>
+                </a>
+            </li>
+
+
+            <li class="sidebar-item has-submenu">
+                <a class="sidebar-link" href="#">
                     <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Reports</span>
                 </a>
+                <ul class="submenu collapse">
+                    <li>
+                        <a class="sidebar-link" href="#">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="sidebar-link" href="#">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="sidebar-link" href="#">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
+
+
+            <li class="sidebar-header">
+                Settings
+            </li>
+
 
 
         </ul>

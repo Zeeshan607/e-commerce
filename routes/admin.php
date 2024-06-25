@@ -9,4 +9,4 @@ use App\Http\Controllers\Admin\DashboardController;
 
 
 
-Route::get('dashboard/statics', [DashboardController::class,'index'])->name('dashboard');
+Route::get('/statics', [DashboardController::class,'index'])->name('dashboard');

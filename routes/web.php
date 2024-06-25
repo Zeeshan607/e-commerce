@@ -16,7 +16,7 @@ Auth::routes();
 //admin routes
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/login', [App\Http\Controllers\Admin\Auth\AdminLoginController::class,"showLoginForm"])->name('login');
-    Route::post('/login', [App\Http\Controllers\Admin\Auth\AdminLoginController::class,'adminLogin']);
+    Route::post('/login', [App\Http\Controllers\Admin\Auth\AdminLoginController::class,'adminLogin'])->name('login');
     Route::post('/logout', [App\Http\Controllers\Admin\Auth\AdminLoginController::class,'adminLogout'])->name('logout')->middleware('auth:admin');
 });
 
@@ -29,5 +29,3 @@ Route::get('/', function () {
 Route::get("/shop", function (){
     return view('shop');
 });
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-

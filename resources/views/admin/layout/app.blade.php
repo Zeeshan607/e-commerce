@@ -239,7 +239,7 @@
 
 
 <script src="{{asset("/dashboard/dist/js/app.js")}}"></script>
-
+@yield('scripts')
 </body>
 
 </html>

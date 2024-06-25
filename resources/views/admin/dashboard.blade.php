@@ -11,389 +11,505 @@
 					  </div>
 
 
+                    <div class="container-fluid bg-white">
 
 
-					  <div class="container-fluid">
+                        <h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
 
-						<div class="row">
-							<div class="col-lg-12">
-							  <div class="card">
-								 <div class="card-header text-uppercase text-white" style="background-color: rgb(43, 103, 216);">Add New Meme</div>
-								 <div class="card-body">
-									<form>
-									<div class="row mt-2">
-									<div class="col-12 md-6 pb-2">
-										<fieldset class="border p-2">
-											<legend  class="w-auto text-uppercase"><small>Member Detail</small> </legend>
-											<div class="row">
-												<div class="col form-group">
-													<div class="card-body">
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-															<select class="form-control required single-select">
-																<option selected>Select Coordinator</option>
-																<option value="0">NAme1</option>
-																<option value="1">Name2</option>
-																<option value="2">Name3</option>
-															</select>
-															<label class="form-label select-label" for="coordinator">Coordinator</label>
-														</div><!--End Coordinator-->
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-															<select class="form-control required single-select">
-																<option selected>Select Program</option>
-																<option value="0">NAme1</option>
-																<option value="1">Name2</option>
-																<option value="2">Name3</option>
-															</select>
-															<label class="form-label select-label" for="program">Program</label>
-														</div><!--End Program-->
+                        <div class="row">
+                            <div class="col-xl-6 col-xxl-5 d-flex">
+                                <div class="w-100">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col mt-0">
+                                                            <h5 class="card-title">Sales</h5>
+                                                        </div>
 
+                                                        <div class="col-auto">
+                                                            <div class="stat text-primary">
+                                                                <i class="align-middle" data-feather="truck"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h1 class="mt-1 mb-3">2.382</h1>
+                                                    <div class="mb-0">
+                                                        <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                                        <span class="text-muted">Since last week</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col mt-0">
+                                                            <h5 class="card-title">Visitors</h5>
+                                                        </div>
 
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-right">
-															<div class="form-outline datepicker">
-																<input class="form-control required" type="date" id="date" name="date">
-																<label class="form-label select-label" for="date">Select Date</label>
-																<div class="invalid-feedback">Invalid date or date format</div>
-															</div>
-														</div><!--End start date -->
+                                                        <div class="col-auto">
+                                                            <div class="stat text-primary">
+                                                                <i class="align-middle" data-feather="users"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h1 class="mt-1 mb-3">14.212</h1>
+                                                    <div class="mb-0">
+                                                        <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+                                                        <span class="text-muted">Since last week</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col mt-0">
+                                                            <h5 class="card-title">Earnings</h5>
+                                                        </div>
 
-														<div class="col-sm-4 lg-4 form-group">
-														  <label for="date" class="col-form-label font-weight-bolder float-left"></label>
-														  <input type="date" name="" id="date" class="form-control" placeholder="Select date" />
-														  <small>Select your trip Date.</small>
-													  </div>
-													  <div class="col-sm-4 form-group">
-														  <label for="time" class="col-form-label font-weight-bolder float-left"></label>
-														  <input type="time" name="" id="time" class="form-control" placeholder="Select time" />
-														  <small>Select your trip time.</small>
-													  </div>
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-															<select class="form-control required single-select" name="denomination">
-																<option selected>Select Denominaton</option>
-																<option value="0">Deno1</option>
-																<option value="1">Deno2</option>
-																<option value="2">Deno3</option>
-															</select>
-															<label class="form-label select-label" for="denomination">Denomination</label>
-														</div><!--End Program-->
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-														  <select class="form-control required single-select">
-															  <option default>Select Country</option>
-															  <option value="0">USA</option>
-															  <option value="1">Canada</option>
-															  <option value="2">Spain</option>
-															  <option value="2">Germany</option>
-														  </select>
-														  <label class="form-label select-label" for="projectcountry">Country</label>
-														</div><!--End project Country-->
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-														  <select class="form-control required single-select">
-															  <option default>Select State</option>
-															  <option value="0">1</option>
-															  <option value="1">2</option>
-															  <option value="2">3</option>
-															  <option value="2">4</option>
-														  </select>
-														  <label class="form-label select-label" for="projectstate">State</label>
-														</div> <!--End project State-->
-														<div class="form-group col-sm-12 col-md-4 mb-3 float-left">
-														  <select class="form-control required single-select">
-															  <option default>Select District</option>
-															  <option value="0">1</option>
-															  <option value="1">2</option>
-															  <option value="2">3</option>
-															  <option value="3">4</option>
-														  </select>
-														  <label class="form-label select-label" for="projectdistt">District</label>
-														</div> <!--End project District-->
-														<div class="form-group col-sm-12 col-md-8 mb-3 float-left">
-															<div class="form-outline">
-															  <input class="required form-control" type="text" id="projectcity" placeholder="Enter Project City ">
-															  <label class="form-label" for="projectcity">City</label>
-															</div>
-														</div><!--End Project Address-->
+                                                        <div class="col-auto">
+                                                            <div class="stat text-primary">
+                                                                <i class="align-middle" data-feather="dollar-sign"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h1 class="mt-1 mb-3">$21.300</h1>
+                                                    <div class="mb-0">
+                                                        <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+                                                        <span class="text-muted">Since last week</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col mt-0">
+                                                            <h5 class="card-title">Orders</h5>
+                                                        </div>
 
-													   <!--Start Submission Buttons-->
-														<div class="row mb-4 mt-3 justify-content-end">
-															<div class="col-sm-12 col-md-8 lg-6 btn-group float-right mr-3 mt-4">
-																<button type="button" role="button" class="btn btn-danger waves-effect px-3 mt-2">Cancel</button> &nbsp;&nbsp;
-																<button type="button" role="button" class="btn btn-info waves-effect px-5 mt-2">Add</button>
+                                                        <div class="col-auto">
+                                                            <div class="stat text-primary">
+                                                                <i class="align-middle" data-feather="shopping-cart"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h1 class="mt-1 mb-3">64</h1>
+                                                    <div class="mb-0">
+                                                        <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
+                                                        <span class="text-muted">Since last week</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-															</div>
-														</div>
+                            <div class="col-xl-6 col-xxl-7">
+                                <div class="card flex-fill w-100">
+                                    <div class="card-header">
 
+                                        <h5 class="card-title mb-0">Recent Movement</h5>
+                                    </div>
+                                    <div class="card-body py-3">
+                                        <div class="chart chart-sm">
+                                            <canvas id="chartjs-dashboard-line"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+                                <div class="card flex-fill w-100">
+                                    <div class="card-header">
 
+                                        <h5 class="card-title mb-0">Browser Usage</h5>
+                                    </div>
+                                    <div class="card-body d-flex">
+                                        <div class="align-self-center w-100">
+                                            <div class="py-3">
+                                                <div class="chart chart-xs">
+                                                    <canvas id="chartjs-dashboard-pie"></canvas>
+                                                </div>
+                                            </div>
 
-													</div>
+                                            <table class="table mb-0">
+                                                <tbody>
+                                                <tr>
+                                                    <td>Chrome</td>
+                                                    <td class="text-end">4306</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Firefox</td>
+                                                    <td class="text-end">3801</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IE</td>
+                                                    <td class="text-end">1689</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+                                <div class="card flex-fill w-100">
+                                    <div class="card-header">
 
-												</div>
-											</div>
-										</fieldset>
-									</div>
-									</div>
-									</form>
+                                        <h5 class="card-title mb-0">Real-Time</h5>
+                                    </div>
+                                    <div class="card-body px-4">
+                                        <div id="world_map" style="height:350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+                                <div class="card flex-fill">
+                                    <div class="card-header">
 
+                                        <h5 class="card-title mb-0">Calendar</h5>
+                                    </div>
+                                    <div class="card-body d-flex">
+                                        <div class="align-self-center w-100">
+                                            <div class="chart">
+                                                <div id="datetimepicker-dashboard"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-				<div class="row mt-2">
-				  <div class="col">
-				  <div class="card">
-					<div class="card-header" style="background-color: blue;"><h2> Profile Stats</h2></div>
-					<div class="card-body">
-													  <!-- Start DATA Toggle Area-->
+                        <div class="row">
+                            <div class="col-12 col-lg-8 col-xxl-9 d-flex">
+                                <div class="card flex-fill">
+                                    <div class="card-header">
 
-														<div id="panel4" class="panel">
+                                        <h5 class="card-title mb-0">Latest Projects</h5>
+                                    </div>
+                                    <table class="table table-hover my-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th class="d-none d-xl-table-cell">Start Date</th>
+                                            <th class="d-none d-xl-table-cell">End Date</th>
+                                            <th>Status</th>
+                                            <th class="d-none d-md-table-cell">Assignee</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Project Apollo</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td class="d-none d-md-table-cell">Vanessa Tucker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Fireball</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-danger">Cancelled</span></td>
+                                            <td class="d-none d-md-table-cell">William Harris</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Hades</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td class="d-none d-md-table-cell">Sharon Lessman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Nitro</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-warning">In progress</span></td>
+                                            <td class="d-none d-md-table-cell">Vanessa Tucker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Phoenix</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td class="d-none d-md-table-cell">William Harris</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project X</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td class="d-none d-md-table-cell">Sharon Lessman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Romeo</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-success">Done</span></td>
+                                            <td class="d-none d-md-table-cell">Christina Mason</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project Wombat</td>
+                                            <td class="d-none d-xl-table-cell">01/01/2021</td>
+                                            <td class="d-none d-xl-table-cell">31/06/2021</td>
+                                            <td><span class="badge bg-warning">In progress</span></td>
+                                            <td class="d-none d-md-table-cell">William Harris</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+                                <div class="card flex-fill w-100">
+                                    <div class="card-header">
 
-
-														  <div id="">
-															  <input type="hidden" name="" id="\" value="">
-														  </div>
-														  <div id="">
-															  <input type="hidden" name="" id="" value="">
-														  </div>
-														  <div id="">
-															  <input type="hidden" name="" id="" value="">
-														  </div>
-														  <div id="">
-															  <input type="hidden" name="" id="" value="[]">
-														  </div>
-														  <div id="">
-															  <input type="hidden" name="" id="" value="[]">
-														  </div>
-														  <h3 class="secDivider first clearfix">
-															  <div class="pull-right">
-																  <div class="btn-group">
-																	  <button id="bidId1" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  Last 30 Days</button>
-																	  <button id="bidId2" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  Year</button>
-																	  <button id="bidId3" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  All Time</button>
-																  </div>
-															  </div>
-															  Profile Views
-														  </h3>
-														  <!-- <img src="../images/profile/mockup/chart.png" />-->
-														  <div id="chartContainer" style="min-width: 310px; height: 200px; margin: 0 auto" class="hide">
-															<div style="position: relative;">
-															  <div dir="ltr" style="position: relative; width: 737px; height: 200px;">
-																<div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
-																  <svg width="737" height="200" aria-label="A chart." style="overflow: hidden;">
-																	<defs id="_ABSTRACT_RENDERER_ID_10">
-																	  <clipPath id="_ABSTRACT_RENDERER_ID_11">
-																		<rect x="88" y="38" width="561" height="124"></rect>
-																	  </clipPath>
-																	</defs>
-																	<rect x="0" y="0" width="737" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-																	<g><text text-anchor="start" x="88" y="23.2" font-family="Arial" font-size="12" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">View/Time Chart</text>
-																	  <rect x="88" y="13" width="561" height="12" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-																	</g>
-																	<g><rect x="88" y="38" width="561" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-																	  <g clip-path="url(https://www.guru.com/pro/profilebuild.aspx?tab=7#_ABSTRACT_RENDERER_ID_11)">
-																		<g><rect x="88" y="161" width="561" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
-																		  <rect x="88" y="100" width="561" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
-																		  <rect x="88" y="38" width="561" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
-																		  <rect x="88" y="130" width="561" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect>
-																		  <rect x="88" y="69" width="561" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect>
-																		</g>
-																		<g><path d="M128.5,161.5L208.5,38.5L288.5,38.5L368.5,161.5L448.5,38.5L528.5,161.5L608.5,161.5" stroke="#808080" stroke-width="3" fill-opacity="1" fill="none"></path>
-																		</g>
-																	  </g>
-																	  <g>
-																		<circle cx="128.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="208.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="288.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="368.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="448.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="528.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="608.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-																		<circle cx="128.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="208.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="288.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="368.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="448.5" cy="38.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="528.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																		<circle cx="608.5" cy="161.5" r="3.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-																	  </g>
-																	  <g>
-																		<g><text text-anchor="middle" x="128.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Jun 2022</text>
-																		</g>
-																		<g><text text-anchor="middle" x="208.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Aug 2022</text>
-																		</g>
-																		<g><text text-anchor="middle" x="288.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Sep 2022</text>
-																		</g>
-																		<g><text text-anchor="middle" x="368.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Nov 2022</text>
-																		</g>
-																		<g><text text-anchor="middle" x="448.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Dec 2022</text>
-																		</g>
-																		<g><text text-anchor="middle" x="528.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Feb 2023</text>
-																		</g>
-																		<g><text text-anchor="middle" x="608.5" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#222222">Mar 2023</text>
-																		</g>
-																		<g><text text-anchor="end" x="76" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">1.0</text>
-																		</g>
-																	  </g>
-																	</g>
-																	<g></g>
-																  </svg>
-																  <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-																	<table>
-																	  <thead>
-																		<tr>
-																		  <th>Time</th>
-																		  <th>View</th>
-																		  <th>View</th>
-																		</tr>
-																	  </thead>
-																	  <tbody>
-																		<tr>
-																		  <td>Jun 2022</td>
-																		  <td>1</td>
-																		  <td>1</td>
-																		</tr>
-																		<tr>
-																		  <td>Aug 2022</td>
-																		  <td>2</td>
-																		  <td>2</td>
-																		</tr>
-																		<tr>
-																		  <td>Sep 2022</td>
-																		  <td>2</td>
-																		  <td>2</td>
-																		</tr>
-																		<tr>
-																		  <td>Nov 2022</td>
-																		  <td>1</td>
-																		  <td>1</td>
-																		</tr>
-																		<tr>
-																		  <td>Dec 2022</td>
-																		  <td>2</td>
-																		  <td>2</td>
-																		</tr>
-																		<tr>
-																		  <td>Feb 2023</td>
-																		  <td>1</td>
-																		  <td>1</td>
-																		</tr>
-																		<tr>
-																		  <td>Mar 2023</td>
-																		  <td>1</td>
-																		  <td>1</td>
-																		</tr>
-																	  </tbody>
-																	</table>
-																  </div>
-																</div>
-															  </div>
-															  <div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 747px; white-space: nowrap; font-family: Arial; font-size: 12px; font-weight: bold;">View/Time Chart
-															  </div>
-															  <div>
-
-															  </div>
-															</div>
-														  </div>
-
-														  <h4 class="secDivider">  Conversions</h4>
-														  <ul class="clearfix bidStats">
-															  <li>
-																  <div class="statBox">
-																	  <span>Total Cummulative Points</span> <strong id="" class="focus">6</strong>
-																  </div>
-															  </li>
-															  <li>
-																  <div class="statBox">
-																	  <span># of Hours attend</span> <strong id="" class="focus">0</strong>
-																  </div>
-															  </li>
-														  </ul>
-														  <h3 class="secDivider clearfix">
-															  <div class="pull-right">
-																  <div class="btn-group">
-																	  <button id="serviceOvwMonth" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  Last 30 Days</button>
-																	  <button id="serviceOvwYear" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  Year</button>
-																	  <button id="serviceOvwAlltime" class="btnGrayFlat btn-small" onclick="javascript:return false;">
-																		  All Time</button>
-																  </div>
-															  </div>
-															  Activities Overview
-														  </h3>
-														  <table class="table simpleTable">
-															  <thead>
-																  <tr>
-																	  <th>
-																		  Activity name
-																	  </th>
-																	  <th>
-																		  Points Achieved
-																	  </th>
-																	  <th>
-																		  Last activity
-																	  </th>
-																	  <th>
-																		  Conversions Rate
-																	  </th>
-																  </tr>
-															  </thead>
-															  <tbody id="bodyServiceOvw">
-																<tr>
-																  <td>
-																	<a class="BlueLinks" href="">Cleaning
-
-																	</a>
-																  </td>
-																  <td>0</td>
-																  <td>0</td>
-																  <td>0%</td>
-																</tr>
-																<tr>
-																  <td>
-																	<a class="BlueLinks" href="">Volunteer
-
-																	</a>
-																  </td>
-																  <td>0</td>
-																  <td>0</td>
-																  <td>0%</td>
-																</tr>
-																<tr>
-																  <td><a class="BlueLinks" href="">Bar </a>
-																  </td>
-																  <td>1</td>
-																  <td>0</td>
-																  <td>0%</td>
-																</tr>
-																<tr>
-																  <td><a class="BlueLinks" href="">Hall  </a>
-																  </td>
-																  <td>0</td>
-																  <td>0</td>
-																  <td>0%</td>
-																</tr>
-															  </tbody>
-														  </table>
-
-													  </div>
-													  </div>  <!--End Data Area-->
-					</div>
-
-				  </div>
-				</div>
-
-								 </div>
-							   </div> <!--End Proect Card-->
-							</div> <!--End col-->
-						</div><!--End Row - project Info-->
+                                        <h5 class="card-title mb-0">Monthly Sales</h5>
+                                    </div>
+                                    <div class="card-body d-flex w-100">
+                                        <div class="align-self-center chart chart-lg">
+                                            <canvas id="chartjs-dashboard-bar"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-					<!-- End container-fluid-->
-				   </div>
+                        </div>
+
+                    </div>
+
+                    @endsection
+                    @section('scripts')
 
 
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+                                var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+                                gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+                                gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+                                // Line chart
+                                new Chart(document.getElementById("chartjs-dashboard-line"), {
+                                    type: "line",
+                                    data: {
+                                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                                        datasets: [{
+                                            label: "Sales ($)",
+                                            fill: true,
+                                            backgroundColor: gradient,
+                                            borderColor: window.theme.primary,
+                                            data: [
+                                                2115,
+                                                1562,
+                                                1584,
+                                                1892,
+                                                1587,
+                                                1923,
+                                                2566,
+                                                2448,
+                                                2805,
+                                                3438,
+                                                2917,
+                                                3327
+                                            ]
+                                        }]
+                                    },
+                                    options: {
+                                        maintainAspectRatio: false,
+                                        legend: {
+                                            display: false
+                                        },
+                                        tooltips: {
+                                            intersect: false
+                                        },
+                                        hover: {
+                                            intersect: true
+                                        },
+                                        plugins: {
+                                            filler: {
+                                                propagate: false
+                                            }
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                reverse: true,
+                                                gridLines: {
+                                                    color: "rgba(0,0,0,0.0)"
+                                                }
+                                            }],
+                                            yAxes: [{
+                                                ticks: {
+                                                    stepSize: 1000
+                                                },
+                                                display: true,
+                                                borderDash: [3, 3],
+                                                gridLines: {
+                                                    color: "rgba(0,0,0,0.0)"
+                                                }
+                                            }]
+                                        }
+                                    }
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                // Pie chart
+                                new Chart(document.getElementById("chartjs-dashboard-pie"), {
+                                    type: "pie",
+                                    data: {
+                                        labels: ["Chrome", "Firefox", "IE"],
+                                        datasets: [{
+                                            data: [4306, 3801, 1689],
+                                            backgroundColor: [
+                                                window.theme.primary,
+                                                window.theme.warning,
+                                                window.theme.danger
+                                            ],
+                                            borderWidth: 5
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: !window.MSInputMethodContext,
+                                        maintainAspectRatio: false,
+                                        legend: {
+                                            display: false
+                                        },
+                                        cutoutPercentage: 75
+                                    }
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                // Bar chart
+                                new Chart(document.getElementById("chartjs-dashboard-bar"), {
+                                    type: "bar",
+                                    data: {
+                                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                                        datasets: [{
+                                            label: "This year",
+                                            backgroundColor: window.theme.primary,
+                                            borderColor: window.theme.primary,
+                                            hoverBackgroundColor: window.theme.primary,
+                                            hoverBorderColor: window.theme.primary,
+                                            data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                                            barPercentage: .75,
+                                            categoryPercentage: .5
+                                        }]
+                                    },
+                                    options: {
+                                        maintainAspectRatio: false,
+                                        legend: {
+                                            display: false
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                gridLines: {
+                                                    display: false
+                                                },
+                                                stacked: false,
+                                                ticks: {
+                                                    stepSize: 20
+                                                }
+                                            }],
+                                            xAxes: [{
+                                                stacked: false,
+                                                gridLines: {
+                                                    color: "transparent"
+                                                }
+                                            }]
+                                        }
+                                    }
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var markers = [{
+                                    coords: [31.230391, 121.473701],
+                                    name: "Shanghai"
+                                },
+                                    {
+                                        coords: [28.704060, 77.102493],
+                                        name: "Delhi"
+                                    },
+                                    {
+                                        coords: [6.524379, 3.379206],
+                                        name: "Lagos"
+                                    },
+                                    {
+                                        coords: [35.689487, 139.691711],
+                                        name: "Tokyo"
+                                    },
+                                    {
+                                        coords: [23.129110, 113.264381],
+                                        name: "Guangzhou"
+                                    },
+                                    {
+                                        coords: [40.7127837, -74.0059413],
+                                        name: "New York"
+                                    },
+                                    {
+                                        coords: [34.052235, -118.243683],
+                                        name: "Los Angeles"
+                                    },
+                                    {
+                                        coords: [41.878113, -87.629799],
+                                        name: "Chicago"
+                                    },
+                                    {
+                                        coords: [51.507351, -0.127758],
+                                        name: "London"
+                                    },
+                                    {
+                                        coords: [40.416775, -3.703790],
+                                        name: "Madrid "
+                                    }
+                                ];
+                                var map = new jsVectorMap({
+                                    map: "world",
+                                    selector: "#world_map",
+                                    zoomButtons: true,
+                                    markers: markers,
+                                    markerStyle: {
+                                        initial: {
+                                            r: 9,
+                                            strokeWidth: 7,
+                                            stokeOpacity: .4,
+                                            fill: window.theme.primary
+                                        },
+                                        hover: {
+                                            fill: window.theme.primary,
+                                            stroke: window.theme.primary
+                                        }
+                                    },
+                                    zoomOnScroll: false
+                                });
+                                window.addEventListener("resize", () => {
+                                    map.updateSize();
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+                                var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+                                document.getElementById("datetimepicker-dashboard").flatpickr({
+                                    inline: true,
+                                    prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+                                    nextArrow: "<span title=\"Next month\">&raquo;</span>",
+                                    defaultDate: defaultDate
+                                });
+                            });
 
 
+                        </script>
 
-				</div>
 
 @endsection

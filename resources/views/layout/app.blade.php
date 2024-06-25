@@ -4,9 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{--    <meta http-equiv="x-ua-compatible" content="ie=edge">--}}
-    <title>Home Version One || limupa - Digital Products Store eCommerce Bootstrap 4 Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>@yield('page-title')</title>
+    <meta name="Description" content="@yield('page-meta-description')">
+    <meta name="Keywords" content="@yield('page-meta-keywords')">
+    <meta property="og:title" content="@yield('page-og-title')" />
+    <meta property="og:description" content="@yield('page-og-description')" />
+    <meta property="og:image" content="@yield('page-og-image-path')" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="@yield('page-og-title')" />
+
+
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('/dist/images/favicon.png')}}">
     <!-- Material Design Iconic Font-V2.2.0 -->
