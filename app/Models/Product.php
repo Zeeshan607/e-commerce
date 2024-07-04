@@ -12,10 +12,10 @@ class Product extends Model
     protected  $fillable=[
          'name',
         'description',
-        'sku',
-        'price',
-        'sale_price',
-        'cost',
+        'sku',// stock keeping unit: A unique identifier for the product used for inventory management and tracking. It helps in differentiating products and their variations.
+        'price',//sale price
+        'sale_price',//if product is on sale
+        'cost',// on which product is bought by store
         'quantity',
         'category_id',
         'subcategory_id',

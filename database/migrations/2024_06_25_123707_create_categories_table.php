@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('title_slug')->unique();
+            $table->string('name');
+            $table->string('slug')->unique();
             $table->longText('description');
             $table->string('image');
+            $table->unsignedBigInteger('parent_id')->nullable();
+            $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade');
             $table->mediumText('meta_title')->nullable();
             $table->longText('meta_description')->nullable();
             $table->longText("meta_keywords");
