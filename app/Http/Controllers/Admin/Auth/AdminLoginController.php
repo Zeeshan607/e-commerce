@@ -13,7 +13,7 @@ class AdminLoginController extends Controller
     //
     use AuthenticatesUsers;
 
-    protected $redirectTo = 'dashboard';
+    protected $redirectTo = 'statics';
 
     public function __construct()
     {
@@ -36,14 +36,9 @@ class AdminLoginController extends Controller
             'email'   => 'required',
             'password' => 'required|min:8'
         ]);
-//
-//        $admin=Admin::where('email',$request->email)->first();
-//        $correct=\Hash::check($request->password, $admin->password);
-//        \Log::info("password correct ".$correct);
-//        \Log::info(['email' => $request->email, 'password' => $request->password]);
+
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
-//
-//            \Log::info("login successs");
+
             return redirect()->intended('/dashboard/statics');
         }
         return back()->withInput($request->only('email', 'remember'))->withErrors(["Incorrect Credentials"]);

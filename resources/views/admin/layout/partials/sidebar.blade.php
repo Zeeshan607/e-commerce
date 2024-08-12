@@ -8,7 +8,7 @@
 
 
             <li class="sidebar-item ">
-                <a class="sidebar-link" href="{{route('dashboard')}}">
+                <a class="sidebar-link" href="{{route('dashboard.statics')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
                 </a>
             </li>
@@ -19,7 +19,7 @@
 
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="">
+                <a class="sidebar-link" href="{{route('dashboard.category.index')}}">
                     <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Categories</span>
                 </a>
             </li>

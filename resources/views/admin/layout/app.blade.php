@@ -16,7 +16,8 @@
 
     <title>E-Commerce | Admin Panel</title>
 
-    <link href="{{asset("/dashboard/dist/css/app.css")}}" rel="stylesheet">
+    <link href="{{asset("/dashboard/dist/css/app.css")}}" rel="stylesheet" />
+    <link href="{{asset("/plugins/sweetalert/sweetalert.css")}}" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -239,6 +240,10 @@
 
 
 <script src="{{asset("/dashboard/dist/js/app.js")}}"></script>
+<script src="{{asset('/plugins/jquery-3.6.1.min.js')}}"></script>
+<script src="{{asset('/plugins/popper.min.js')}}"></script>
+<script src="{{asset('/plugins/sweetalert/sweetalert.min.js')}}"></script>
+
 @yield('scripts')
 </body>
 

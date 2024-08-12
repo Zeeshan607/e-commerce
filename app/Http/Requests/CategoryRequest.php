@@ -21,8 +21,26 @@ class CategoryRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
-        ];
+        switch ($this->method()) {
+            case 'POST':
+                return [
+                    'name'=>'required',
+                    'slug'=>'required|alpha_dash|unique:categories',
+                    'image'=>'nullable|image|mimes:jpeg,png,jpg,svg|max:2048',
+                    'description'=>'request',
+
+                ];
+                break;
+
+            case 'PUT':
+                return [
+                    'name'=>'required',
+                    'slug'=>'required|alpha_dash|unique:categories',
+                    'image'=>'nullable|image|mimes:jpeg,png,jpg,svg|max:2048',
+                    'description'=>'request'
+                ];
+                break;
+        }
+
     }
 }

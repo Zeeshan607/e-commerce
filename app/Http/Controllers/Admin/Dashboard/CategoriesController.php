@@ -3,6 +3,10 @@
 namespace App\Http\Controllers\Admin\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryRequest;
+use App\Models\Category;
+use App\Models\Posts;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -13,6 +17,8 @@ class CategoriesController extends Controller
     public function index()
     {
         //
+        $data['categories']=Category::with(['children'])->paginate(10);
+        return view('admin.sidebar.categories.index',$data);
     }
 
     /**
@@ -21,14 +27,17 @@ class CategoriesController extends Controller
     public function create()
     {
         //
+        $data['categories']= Category::all();
+        return view('admin.sidebar.categories.create',$data);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
         //
+
     }
 
     /**
@@ -45,12 +54,14 @@ class CategoriesController extends Controller
     public function edit(string $id)
     {
         //
+        $data['category']=Category::findOrFail($id);
+        return view('admin.sidebar.categories.edit',$data);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(CategoryRequest  $request, string $id)
     {
         //
     }
@@ -61,5 +72,9 @@ class CategoriesController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function createSlug(Request $request){
+        $slug = SlugService::createSlug(Category::class, 'slug', $request->name);
+        return response()->json(['slug'=>$slug]);
     }
 }
