@@ -25,7 +25,7 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="{{route('dashboard.product.index')}}">
                     <i class="align-middle" data-feather="user"></i> <span class="align-middle">Products</span>
                 </a>
             </li>

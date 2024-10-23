@@ -8,7 +8,7 @@
     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
     <meta name="author" content="AdminKit">
     <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="{{asset("/dashboard/dist/img/icons/icon-48x48.png")}}" />
 
@@ -17,7 +17,9 @@
     <title>E-Commerce | Admin Panel</title>
 
     <link href="{{asset("/dashboard/dist/css/app.css")}}" rel="stylesheet" />
-    <link href="{{asset("/plugins/sweetalert/sweetalert.css")}}" />
+    <link href="{{asset("/plugins/sweetalert2/sweetalert2.min.css")}}" />
+    <link href="{{asset("/plugins/fontawesome-6.5.1/css/all.min.css")}}" />
+    <link rel="stylesheet" href="{{asset('/plugins/froala-editor/css/froala_editor.pkgd.min.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -115,7 +117,7 @@
                                 <a href="#" class="list-group-item">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-2">
-                                            <img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+                                            <img src="{{asset('dashboard/dist/img/avatars/avatar-5.jpg')}}" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
                                         </div>
                                         <div class="col-10 ps-2">
                                             <div class="text-dark">Vanessa Tucker</div>
@@ -127,7 +129,7 @@
                                 <a href="#" class="list-group-item">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-2">
-                                            <img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+                                            <img src="{{asset('dashboard/dist/img/avatars/avatar-2.jpg')}}" class="avatar img-fluid rounded-circle" alt="William Harris">
                                         </div>
                                         <div class="col-10 ps-2">
                                             <div class="text-dark">William Harris</div>
@@ -139,7 +141,7 @@
                                 <a href="#" class="list-group-item">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-2">
-                                            <img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+                                            <img src="{{asset('dashboard/dist/img/avatars/avatar-4.jpg')}}" class="avatar img-fluid rounded-circle" alt="Christina Mason">
                                         </div>
                                         <div class="col-10 ps-2">
                                             <div class="text-dark">Christina Mason</div>
@@ -151,7 +153,7 @@
                                 <a href="#" class="list-group-item">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-2">
-                                            <img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+                                            <img src="{{asset('dashboard/dist/img/avatars/avatar-3.jpg')}}" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
                                         </div>
                                         <div class="col-10 ps-2">
                                             <div class="text-dark">Sharon Lessman</div>
@@ -172,7 +174,7 @@
                         </a>
 
                         <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                            <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+                            <img src="{{asset('dashboard/dist/img/avatars/avatar.jpg')}}" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
@@ -239,10 +241,26 @@
 
 
 
+@vite(['resources/sass/app.scss'])
+
 <script src="{{asset("/dashboard/dist/js/app.js")}}"></script>
-<script src="{{asset('/plugins/jquery-3.6.1.min.js')}}"></script>
+<script src="{{asset('/plugins/jquery-3.6.1.min.js')}}"  ></script>
 <script src="{{asset('/plugins/popper.min.js')}}"></script>
-<script src="{{asset('/plugins/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('/plugins/jquery-mask-1.14.6.min.js')}}"></script>
+<script src="{{asset('/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
+<script src="{{asset('/plugins/fontawesome-6.5.1/js/all.min.js')}}"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+<!-- DataTables Buttons Plugin -->
+<script src="https://cdn.datatables.net/buttons/2.3.7/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.7/js/buttons.bootstrap5.min.js"></script>
+<!-- DataTables Select Plugin -->
+<script src="https://cdn.datatables.net/select/1.7.0/js/dataTables.select.min.js"></script>
+<script src="{{asset('/plugins/froala-editor/js/froala_editor.min.js')}}"></script>
+<script src="{{asset('/plugins/froala-editor/js/plugins/image.min.js')}}"></script>
+<script src="{{asset('/plugins/froala-editor/js/plugins/image_manager.min.js')}}"></script>
+
 
 @yield('scripts')
 </body>

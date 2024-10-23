@@ -18,7 +18,7 @@
                         <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Sub Category</th>
+                            <th>Parent</th>
                             <th>Image</th>
                             <th>Actions</th>
                         </tr>
@@ -27,27 +27,25 @@
                         @forelse($categories as $category)
                         <tr>
                             <td>{{$category->name}}</td>
-                            <td>{{$category->children}}</td>
-                            <td><img src="{{asset('/storage/').$category->image}}" alt="product_image_here" width="300px" height="100%"></td>
+                            <td>{{$category->parent?->name}}</td>
+                            <td><img src="{{asset('/storage/categories')."/".$category->slug."/".$category->image}}" alt="product_image_here" width="200px" height="100%"></td>
                             <td>
-                                <a href=""><i class="fa fa-edit me-2"></i></a>
-                                <a href="#"  class="mx-3" onclick="
+                                <a href="{{route('dashboard.category.edit',$category->id)}}" class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                                <a href="#"  class=" btn btn-danger mx-3" onclick="
                                 event.preventDefault();
-                                swal({
+                                new Swal({
                                 title:'Are you sure?',
-                                text:'You want to move this post to Trash!',
-                                type: 'warning',
+                                text:'You want to delete this category !',
                                 showCancelButton: true,
                                 confirmButtonColor: '#324cdd',
-                                confirmButtonText: 'Yes, move it!',
-                                closeOnConfirm: true
-                                },function(resp){
-                                if(resp){
-                                $('#delRecord'+`{{$post->id}}`).submit();
-                                }
-                                });
-                                            "><i class="fa fa-trash"></i></a>
-                                <form action="{{route('dashboard.blog.post.destroy',$post->id)}}" method="post" id="delRecord{{$post->id}}">
+                                confirmButtonText: 'Yes, Delete it!',
+                                }).then(function(resp){
+                                    // console.log('accepted')
+                                    if(resp.isConfirmed){
+                                    $('#delRecord'+`{{$category->id}}`).submit();
+                                    }
+                                }); "><i class="fa fa-trash"></i></a>
+                                <form action="{{route('dashboard.category.destroy',$category->id)}}" method="post" id="delRecord{{$category->id}}">
                                     @csrf
                                     @method('DELETE')
                                 </form>
@@ -56,7 +54,7 @@
                             @empty
                             <tr>
                                 <td colspan="4">
-                                    0 Products found</td>
+                                    0 Category found</td>
                             </tr>
 
                         @endforelse

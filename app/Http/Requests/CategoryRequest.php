@@ -6,12 +6,14 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class CategoryRequest extends FormRequest
 {
+
+
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -27,20 +29,20 @@ class CategoryRequest extends FormRequest
                     'name'=>'required',
                     'slug'=>'required|alpha_dash|unique:categories',
                     'image'=>'nullable|image|mimes:jpeg,png,jpg,svg|max:2048',
-                    'description'=>'request',
+                    'description'=>'required',
 
-                ];
+                  ];
                 break;
 
             case 'PUT':
                 return [
                     'name'=>'required',
-                    'slug'=>'required|alpha_dash|unique:categories',
+                    'slug'=>'required|alpha_dash|unique:categories,id',
                     'image'=>'nullable|image|mimes:jpeg,png,jpg,svg|max:2048',
-                    'description'=>'request'
-                ];
+                    'description'=>'required'
+                 ];
                 break;
         }
-
+        return [];
     }
 }
